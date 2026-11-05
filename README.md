@@ -1,54 +1,59 @@
 # YOLOv8 Object Detection Using Laptop Camera
 
 ## Aim
+To capture images using a laptop camera and detect objects using the YOLOv8 model.
 
-To access the **laptop camera**, capture an image, and detect objects using **YOLOv8**.
+## Technologies Used
+- Python
+- Anaconda
+- Jupyter Notebook
+- OpenCV
+- YOLOv8 (Ultralytics)
+- Matplotlib
 
 ## Requirements
+- Anaconda installed
+- Jupyter Notebook
+- Laptop camera
+- Python 3.8 or later (compatible package versions)
 
-* Anaconda
-* Jupyter Notebook
-* Laptop Camera
+## Installation
 
-## Steps
+Install the required libraries:
 
-1. Open **Jupyter Notebook** using Anaconda.
-2. Access your **laptop camera** using OpenCV.
-3. Wait for **5 seconds** and capture an image.
-4. Display the captured image.
-5. Apply **YOLOv8 object detection**.
-6. Display the detected image with **bounding boxes and labels**.
+```bash
+pip install opencv-python ultralytics matplotlib
+```
 
 ## Algorithm
 
-```text
-Laptop Camera
-      ↓
-Capture Image
-      ↓
-Display Image
-      ↓
-YOLOv8 Detection
-      ↓
-Display Detected Objects
-```
+1. Open Jupyter Notebook using Anaconda.
+2. Access the laptop camera using OpenCV.
+3. Wait for 5 seconds.
+4. Capture and display an image.
+5. Load the YOLOv8 pretrained model.
+6. Perform object detection.
+7. Display detected objects with bounding boxes and labels.
+8. Repeat the experiment for three different scenes.
 
-## Student Task
+## Experimental Scenes
 
-* Capture your own image using the laptop camera.
-* Detect the objects present in the image.
-* Display the final output.
-* Perform the experiment with **3 different scenes**.
+- **Scene 1:** Detect objects in a single-object scene.
+- **Scene 2:** Detect multiple objects in one image.
+- **Scene 3:** Detect objects in a different environment.
 
-## Submission
+## Expected Output
 
-* Jupyter Notebook (`.ipynb`)
-* Original captured images
-* YOLOv8 output images
-* Screenshot of the final result
+The captured images are processed using YOLOv8. The detected objects are displayed with:
+- Bounding boxes
+- Object labels
+- Confidence scores
 
-## GitHub Reference
+## Conclusion
 
-https://github.com/ultralytics/ultralytics
+Successfully captured images using the laptop camera and detected objects in three different scenes using YOLOv8. OpenCV was used for image capture, and YOLOv8 was used for object detection.
 
-**Platform:** Anaconda + Jupyter Notebook only.
+## Reference
+
+- [Ultralytics YOLOv8 GitHub](https://github.com/ultralytics/ultralytics)
+- [OpenCV Documentation](https://docs.opencv.org/)
